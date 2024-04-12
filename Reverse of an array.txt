@@ -1,0 +1,83 @@
+Reverse of an array
+
+using System;
+public class GFG
+{
+	public static void Main(string[] args)
+	{
+		int[] array = {2,1,2,3,4,8,7,9};
+		//Console.WriteLine(reverseArray(arr));
+		int i = 0;
+		int j = array.Length-1;
+		int temp;
+		while(i<j){
+
+			temp = array[i]; 
+			array[i] = array[j];
+			array[j] = temp;
+			i++;
+			j--;
+		}
+		foreach(var a1 in array){
+			Console.Write(a1);
+
+		}
+
+		}
+
+
+-------------------------------------------------------------------------
+
+using System;
+public class GFG
+{
+	public static void Main(string[] args)
+	{
+		int[] arr = {2,1,2,3,4,8,7,9};
+		//Console.WriteLine(reverseArray(arr));
+		
+		for(int i = 0, j=arr.Length-1; i<j; i++,j--){
+			
+
+			int temp = arr[i]; 
+			arr[i] = arr[j];
+			arr[j] = temp;
+			
+		}
+		foreach(var a1 in arr){
+			Console.Write(a1);
+
+		}
+
+
+________________________________________________________________________________________
+
+Sort in ascending or descending 
+
+using System;
+public class GFG
+{
+	public static void Main(string[] args)
+	{
+		int[] arr = {2,1,2,3,4,8,7,9,1};
+		//Console.WriteLine(reverseArray(arr));
+		
+		for(int i = 0; i<=arr.Length-1; i++){
+			
+			for(int j=arr.Length-1; i<=j; j--){
+			 if(arr[i] > arr[j]){
+			int temp = arr[i]; 
+			arr[i] = arr[j];
+			arr[j] = temp;
+			
+		}}}
+		foreach(var a1 in arr){
+			Console.Write(a1);
+
+		}
+
+	
+		}}
+
+
+
